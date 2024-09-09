@@ -1,0 +1,61 @@
+[
+    {
+        "title": "MapCraft: Dissecting and Designing Custom Geo-Infographics",
+        "year": "Minor Revision",
+        "authors": [
+            "Xinyuan Zhang",
+            "Yifan Yu",
+            "Kaiwen Li",
+            "Lingyun Yu",
+            "Yu Liu"
+        ],
+        "your_position": 3,
+        "journal": "Journal of Visualization",
+        "pages": "",
+        "doi": "",
+        "indexes": [
+            "SCI Q3"
+        ]
+    },
+    {
+        "title": "3DStoryline: Immersive Visual Storytelling",
+        "year": "Minor Revision",
+        "authors": [
+            "Haonan Yao",
+            "Lixiang Zhao",
+            "Boyuan Chen",
+            "Kaiwen Li",
+            "Hai-Ning Liang",
+            "Lingyun Yu"
+        ],
+        "your_position": 4,
+        "journal": "Journal of Visualization",
+        "pages": "",
+        "doi": "",
+        "indexes": [
+            "SCI Q3"
+        ]
+    },
+    {
+        "title": "Data Cubes in Hand: A Design Space of Tangible Cubes for Visualizing 3D Spatio-Temporal Data in Mixed Reality",
+        "year": "2024",
+        "authors": [
+            "Shuqi He",
+            "Haonan Yao",
+            "Luyan Jiang",
+            "Kaiwen Li",
+            "Nan Xiang",
+            "Yue Li",
+            "Hai-Ning Liang",
+            "Lingyun Yu"
+        ],
+        "your_position": 4,
+        "journal": "Proceedings of the CHI Conference on Human Factors in Computing Systems",
+        "pages": "1–21",
+        "doi": "10.1145/3613904.3642740",
+        "indexes": [
+            "EI",
+            "CCF A"
+        ]
+    }
+]

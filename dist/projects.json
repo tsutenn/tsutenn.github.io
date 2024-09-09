@@ -1,0 +1,89 @@
+[
+    {
+        "title": "MapCraft",
+        "subtitle": "Geographic Information Graphics Web Editor for Visual Analysis",
+        "description": "A web application provides customized geo-info-graphics generation on different source data, encoding method, projections and map representations.",
+        "images": [
+            "/images/1.png"
+        ],
+        "url": [
+            {
+                "name": "demo",
+                "icon": "",
+                "url": "https://mapcraftforgeo-infographics.github.io/geo-infographics/"
+            },
+            {
+                "name": "repos",
+                "icon": "",
+                "url": "https://github.com/MapCraftForGeo-InfoGraphics/geo-infographics"
+            }
+        ]
+    },
+    {
+        "title": "Grasp Point-Cloud Selection",
+        "subtitle": "Grasp Selection for Point Cloud in Immersive Environment (VR)",
+        "description": "A gesture-based point cloud selection system to enable intuitive and efficient identification of target clusters in an immersive VR environment.",
+        "images": [
+            "/images/4.png"
+        ],
+        "url": [
+            {
+                "name": "repos",
+                "icon": "",
+                "url": "https://github.com/MapCraftForGeo-InfoGraphics/geo-infographics"
+            }
+        ]
+    },
+    {
+        "title": "Data Cubes in Hand",
+        "subtitle": "Multiple Cube Tracking and Data Transmission",
+        "description": "A Qt window program for cube identifying and tracking based on OpenCV and Hamming Codes, establishing the wireless communication between camera devices and HoloLens.",
+        "images": [
+            "/images/2.png"
+        ],
+        "url": [
+            {
+                "name": "repos",
+                "icon": "",
+                "url": "https://github.com/tsutenn/xrvis-cube"
+            }
+        ]
+    },
+    {
+        "title": "3DStoryline",
+        "subtitle": "Immersive Visual Storyline",
+        "description": "A VR program for visualizing 3DStoryline from encoded story in Excel.",
+        "images": [
+            "/images/3.png"
+        ],
+        "url": []
+    },
+    {
+        "title": "Tangible Virtual Reality Cube",
+        "description": "An Arduino Cube device capable of recording position, posture and surface pressure, for selecting objects according to the pressure  when gripping the device in VR environment.",
+        "images": [
+            "/images/5.png"
+        ],
+        "url": [
+            {
+                "name": "repos",
+                "icon": "",
+                "url": "https://github.com/tsutenn/A-Tangible-Cube-for-3D-Interaction-in-VR"
+            }
+        ]
+    },
+    {
+        "title": "Visual Storytelling for Medical",
+        "description": "A Qt & VTK based interactive visualization system for medical data that provides flag on rendered volume, state preservation and history tracking.",
+        "images": [
+            "/images/6.png"
+        ],
+        "url": [
+            {
+                "name": "repos",
+                "icon": "",
+                "url": "https://github.com/SURF-2021-Yu/Visual-Data-Storytelling"
+            }
+        ]
+    }
+]
