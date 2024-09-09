@@ -1,0 +1,58 @@
+{
+    "name": "Kaiwen Li",
+    "avatar": "/images/avatar.jpg",
+    "position": "Research Assitant",
+    "organization": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
+    "email": [
+        "citun.li23@gmail.com",
+        "kaiwen.li18@alumni.xjtlu.edu.cn"
+    ],
+    "social_media": [
+        {
+            "name": "github",
+            "icon": "mdi:mdi-github",
+            "url": "https://github.com/tsutenn",
+            "nickname": "tsutenn"
+        },
+        {
+            "name": "steam",
+            "icon": "mdi:mdi-steam",
+            "url": "https://steamcommunity.com/id/citun/myworkshopfiles/",
+            "nickname": "citun"
+        }
+    ],
+    "about": "/text/about.md",
+    "education": [
+        {
+            "degree": "MSc Human-Computer Interaction",
+            "university": "Xi'an Jiaotong-Liverpool University",
+            "start_date": "2022-09-01",
+            "end_date": "2024-04-01"
+        },
+        {
+            "degree": "BSc in Information and Computing Science",
+            "university": "Xi'an Jiaotong-Liverpool University",
+            "start_date": "2018-09-01",
+            "end_date": "2022-06-30"
+        }
+    ],
+    "employment": [
+        {
+            "company": "China Communications Services Corp. Ltd.",
+            "position": "Front-End Engineer (Internship)",
+            "start_date": "2024-06-11",
+            "end_date": "2024-09-02",
+            "responsibilities": [
+                "Developed and maintained web applications using Vue.js",
+                "Collaborated with cross-functional teams to deliver projects on time"
+            ]
+        }
+    ],
+    "skills": [
+        "Vue.js",
+        "D3js",
+        "Unity",
+        "Qt",
+        "Python"
+    ]
+}

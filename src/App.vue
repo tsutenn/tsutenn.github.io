@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-app-bar app>
+      <v-app-bar-title>CITUN'S WEBSITE</v-app-bar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon @click="goToHome">
+        <v-icon>mdi:mdi-home</v-icon>
+      </v-btn>
+    </v-app-bar>
+
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
+
+  <v-footer style="background-color: #eee;">
+    <v-row justify="center" no-gutters>
+      <v-col class="text-center mt-4" cols="12">
+        {{ new Date().getFullYear() }} — <strong>{{ author }}</strong>
+      </v-col>
+    </v-row>
+  </v-footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+
+  data() {
+    return {
+      profile: undefined
+    }
+  },
+
+  computed: {
+    author() {
+      return this.profile && this.profile.name ? this.profile.name : "Kaiwen Li"
+    }
+  },
+
+  async created() {
+    try {
+      const response = await fetch('/profile.json');
+      this.profile = await response.json();
+    } catch (error) {
+      console.error('Error fetching profile data:', error);
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '~vuetify/styles';
 </style>
