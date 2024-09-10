@@ -130,7 +130,7 @@
                                                     style="height: 60px; background-color: #5c6bc0; color: white;">
                                                     <v-col>
                                                         <v-card-title class="text-h6 d-flex flex-column"
-                                                            style="height: 160px; justify-content: center;">
+                                                            style="justify-content: center;">
                                                             <p class="mt-4">
                                                                 {{ item.title }}
                                                             </p>
@@ -143,17 +143,29 @@
                                                     style="height: 100%; background-color: #5c6bc0; color: white;">
                                                     <v-col>
                                                         <v-card-title class="text-h6 d-flex flex-column"
-                                                            style="height: 160px; justify-content: center;">
+                                                            style="height: 100px; justify-content: center;">
                                                             <p class="mt-4">
                                                                 {{ item.title }}
                                                             </p>
                                                         </v-card-title>
 
-                                                        <v-card-text>
+                                                        <v-card-text style="height: 80px; justify-content: center;">
                                                             <p class="text-caption font-weight-medium">
                                                                 {{ item.subtitle }}
                                                             </p>
                                                         </v-card-text>
+
+                                                        <div style="height: 45px; justify-content: center;">
+                                                            <v-row>
+                                                                <v-col v-for="(link, index) in item.link"
+                                                                    v-bind:key="index">
+                                                                    <a v-bind:href="link.url" style="color: white;" target="_blank">
+                                                                        <v-icon>{{ link.icon }}</v-icon> {{ link.name }}
+                                                                    </a>
+                                                                </v-col>
+
+                                                            </v-row>
+                                                        </div>
                                                     </v-col>
                                                 </div>
                                             </v-expand-transition>

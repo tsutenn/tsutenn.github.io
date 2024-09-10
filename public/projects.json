@@ -6,15 +6,15 @@
         "images": [
             "/images/1.png"
         ],
-        "url": [
+        "link": [
             {
-                "name": "demo",
-                "icon": "",
+                "name": "Demo",
+                "icon": "mdi:mdi-web",
                 "url": "https://mapcraftforgeo-infographics.github.io/geo-infographics/"
             },
             {
-                "name": "repos",
-                "icon": "",
+                "name": "Github",
+                "icon": "mdi:mdi-github",
                 "url": "https://github.com/MapCraftForGeo-InfoGraphics/geo-infographics"
             }
         ]
@@ -26,10 +26,10 @@
         "images": [
             "/images/4.png"
         ],
-        "url": [
+        "link": [
             {
-                "name": "repos",
-                "icon": "",
+                "name": "Github",
+                "icon": "mdi:mdi-github",
                 "url": "https://github.com/MapCraftForGeo-InfoGraphics/geo-infographics"
             }
         ]
@@ -41,10 +41,10 @@
         "images": [
             "/images/2.png"
         ],
-        "url": [
+        "link": [
             {
-                "name": "repos",
-                "icon": "",
+                "name": "Github",
+                "icon": "mdi:mdi-github",
                 "url": "https://github.com/tsutenn/xrvis-cube"
             }
         ]
@@ -56,7 +56,7 @@
         "images": [
             "/images/3.png"
         ],
-        "url": []
+        "link": []
     },
     {
         "title": "Tangible Virtual Reality Cube",
@@ -64,10 +64,10 @@
         "images": [
             "/images/5.png"
         ],
-        "url": [
+        "link": [
             {
-                "name": "repos",
-                "icon": "",
+                "name": "Github",
+                "icon": "mdi:mdi-github",
                 "url": "https://github.com/tsutenn/A-Tangible-Cube-for-3D-Interaction-in-VR"
             }
         ]
@@ -78,10 +78,10 @@
         "images": [
             "/images/6.png"
         ],
-        "url": [
+        "link": [
             {
-                "name": "repos",
-                "icon": "",
+                "name": "Github",
+                "icon": "mdi:mdi-github",
                 "url": "https://github.com/SURF-2021-Yu/Visual-Data-Storytelling"
             }
         ]

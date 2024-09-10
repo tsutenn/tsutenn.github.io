@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-app-bar app>
-      <v-app-bar-title>CITUN'S WEBSITE</v-app-bar-title>
+      <v-app-bar-title>TSUTENN</v-app-bar-title>
       <v-spacer></v-spacer>
-      <v-btn icon @click="goToHome">
+      <!-- <v-btn icon @click="goToHome">
         <v-icon>mdi:mdi-home</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
 
     <v-main>
