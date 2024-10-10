@@ -1,5 +1,3 @@
 ### Hi, welcome to my website!
 
-I'm **Kaiwen Li**, a recent Master's graduate in Human-Computer Interaction from Xi'an Jiaotong-Liverpool University. My research interests lie in human-central computing, including **interactive systems**, **Tangible User Interaction**, **Virtual Reality**, **Mix Reality**, and **Information Visualization**. Beside academics, I am interested in video games and anime.
-
-Currently I am very interested in the topics of innovative interactive design in VR and automatic visualization of info-graphics.
+My name is Kaiwen Li (李恺文). I am currently a research assistant and recently obtained my master’s degree in Human-Computer Interaction (HCI) from Xi’an Jiaotong-Liverpool University in 2023. My research focuses on immersive visualization techniques, particularly in Virtual Reality (VR) and Augmented Reality (AR), and their applications in enhancing user engagement with complex data. I have contributed to various projects on tangible interfaces, immersive storytelling, and emotional VR therapy. My work has been presented at prominent conferences such as CHI and ChinaVis.

@@ -45,6 +45,10 @@ export default {
     } catch (error) {
       console.error('Error fetching profile data:', error);
     }
+  },
+
+  mounted() {
+    document.title = "Tsutenn's Page";
   }
 }
 </script>

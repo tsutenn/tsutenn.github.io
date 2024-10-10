@@ -41,11 +41,36 @@
             "company": "China Communications Services Corp. Ltd.",
             "position": "Front-End Engineer (Internship)",
             "start_date": "2024-06-11",
-            "end_date": "2024-09-02",
+            "end_date": "2024-09-01",
             "responsibilities": [
                 "Developed and maintained web applications using Vue.js",
                 "Collaborated with cross-functional teams to deliver projects on time"
             ]
+        }
+    ],
+    "academic": [
+        {
+            "name": "Visual Analytics and Collaborative Technologies Research Lab",
+            "department": "Xi'an Jiaotong-Liverpool University",
+            "position": "Research Assitant",
+            "start_date": "2021-06-01",
+            "end_date": ""
+        },
+
+        {
+            "name": "N1L00196 Virtual Reality Design",
+            "department": "Zhejiang Wanli University",
+            "position": "Teaching Assitant",
+            "start_date": "2024-09-01",
+            "end_date": ""
+        },
+
+        {
+            "name": "INT406 Data Mining and Machine Learning",
+            "department": "Xi'an Jiaotong-Liverpool University",
+            "position": "Teaching Assitant",
+            "start_date": "2024-03-01",
+            "end_date": "2024-06-01"
         }
     ],
     "skills": [

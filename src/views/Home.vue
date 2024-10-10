@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container style="max-width: 1280px; min-width: 600px;">
         <!-- 基础信息卡片 -->
         <v-card class="mb-4" outlined style="padding: 8px; background-color: #5c6bc0; color: white;">
 
@@ -34,13 +34,13 @@
 
             <v-row cols="12">
                 <v-col cols="8">
-                    <v-row style="padding-top: 16px;">
+                    <v-row style="padding-top: 16px; padding-right: 8px;">
                         <p v-html="about"></p>
                     </v-row>
 
                     <v-row>
                         <h2 v-if="education.length > 0">
-                            Education Experience
+                            Education
                         </h2>
                         <v-list width="100%">
                             <v-list-item v-for="(item, index) in education" :key="index">
@@ -63,6 +63,22 @@
                                 <v-list-item-content>
                                     <v-list-item-title>{{ item.position }}</v-list-item-title>
                                     <v-list-item-subtitle>{{ item.company }}</v-list-item-subtitle>
+                                    <v-list-item-subtitle>{{ formattedDate(item.start_date) }} - {{
+                                        formattedDate(item.end_date) }}</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+                        </v-list>
+                    </v-row>
+
+                    <v-row>
+                        <h2 v-if="academic.length > 0">
+                            Research and Teaching Experience
+                        </h2>
+                        <v-list width="100%">
+                            <v-list-item v-for="(item, index) in academic" :key="index">
+                                <v-list-item-content>
+                                    <v-list-item-title>{{ item.position }}</v-list-item-title>
+                                    <v-list-item-subtitle>{{ item.name }} - {{ item.department }}</v-list-item-subtitle>
                                     <v-list-item-subtitle>{{ formattedDate(item.start_date) }} - {{
                                         formattedDate(item.end_date) }}</v-list-item-subtitle>
                                 </v-list-item-content>
@@ -111,7 +127,7 @@
             </v-row>
 
             <v-row>
-                <h1>PROJECTS</h1>
+                <h1>SELECTED PROJECTS</h1>
 
             </v-row>
 
@@ -119,7 +135,7 @@
                 <v-container class="pa-4 text-center">
                     <v-row align="center" class="fill-height" justify="center">
                         <template v-for="(item, i) in projects" :key="i">
-                            <v-col cols="12" md="4">
+                            <v-col cols="12" md="6">
                                 <v-hover v-slot="{ isHovering, props }">
                                     <v-card :class="{ 'on-hover': isHovering }" :elevation="isHovering ? 12 : 2"
                                         v-bind="props">
@@ -247,6 +263,10 @@ export default {
             return this.profile && this.profile.employment ? this.profile.employment : []
         },
 
+        academic(){
+            return this.profile && this.profile.academic ? this.profile.academic : []
+        },
+
         social_media() {
             return this.profile && this.profile.social_media ? this.profile.social_media : []
         },
@@ -265,8 +285,13 @@ export default {
 
     methods: {
         formattedDate(date) {
-            const dateObj = new Date(date);
-            return new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(dateObj);
+            try{
+                const dateObj = new Date(date);
+                return new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(dateObj);
+            }
+            catch(e) {
+                return "Present"
+            }
         },
 
         formatAuthors(authors, yourPosition) {
