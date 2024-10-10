@@ -72,7 +72,7 @@
 
                     <v-row>
                         <h2 v-if="academic.length > 0">
-                            Research and Teaching Experience
+                            Teaching Experience
                         </h2>
                         <v-list width="100%">
                             <v-list-item v-for="(item, index) in academic" :key="index">
@@ -229,7 +229,7 @@
                             <v-list-item-subtitle
                                 v-html="formatAuthors(patent.authors, patent.your_position)"></v-list-item-subtitle>
                             <v-list-item-subtitle>{{ patent.year }}. Application NO.: {{ patent.application_no ? patent.application_no : "NaN" }},
-                                Issus NO.: {{ patent.issue_no ? patent.issue_no : "NaN" }}.
+                                Issue NO.: {{ patent.issue_no ? patent.issue_no : "NaN" }}.
                                 {{ patent.remark ? "(" + patent.remark + ")" : "" }}</v-list-item-subtitle>
                             <!-- <v-list-item-subtitle v-if="publication.doi">DOI: {{ publication.doi }}</v-list-item-subtitle> -->
                         </v-list-item-content>
@@ -246,8 +246,8 @@
                 <v-list>
                     <v-list-item v-for="(award, index) in awards" :key="index">
                         <v-list-item-content>
-                            <v-list-item-title>[{{ award.position }}] {{ award.award }}, {{ award.time }}</v-list-item-title>
-                            <v-list-item-subtitle>{{ award.name }}</v-list-item-subtitle>
+                            <v-list-item-title>[{{ award.position }}] {{ award.award }}</v-list-item-title>
+                            <v-list-item-subtitle>{{ award.name }} ({{ award.time }})</v-list-item-subtitle>
                             <!-- <v-list-item-subtitle v-if="publication.doi">DOI: {{ publication.doi }}</v-list-item-subtitle> -->
                         </v-list-item-content>
                     </v-list-item>
