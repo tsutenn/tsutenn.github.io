@@ -73,7 +73,7 @@
         ]
     },
     {
-        "title": "Visual Storytelling for Medical",
+        "title": "Visual Storytelling for Medical Data",
         "description": "A Qt & VTK based interactive visualization system for medical data that provides flag on rendered volume, state preservation and history tracking.",
         "images": [
             "/images/6.png"
