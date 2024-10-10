@@ -158,7 +158,7 @@
                                                     class="d-flex transition-fast-in-fast-out v-card--reveal"
                                                     style="height: 100%; background-color: #5c6bc0; color: white;">
                                                     <v-col>
-                                                        <v-card-title class="text-h6 d-flex flex-column"
+                                                        <v-card-title class="text-wrap d-flex flex-column"
                                                             style="height: 100px; justify-content: center;">
                                                             <p class="mt-4">
                                                                 {{ item.title }}
