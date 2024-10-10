@@ -119,10 +119,6 @@
                         </v-list>
                     </v-row>
 
-
-                    <!-- <v-row justify="end">
-                        <v-btn @click="$router.push('/experience')" variant="plain">View More</v-btn>
-                    </v-row> -->
                 </v-col>
             </v-row>
 
@@ -192,7 +188,6 @@
                         </template>
                     </v-row>
                 </v-container>
-                <!-- <v-btn v-if="projects.length > 3" @click="$router.push('/projects')">View More</v-btn> -->
             </v-row>
 
             <v-row v-if="publications.length > 0">
@@ -214,7 +209,6 @@
                         </v-list-item-content>
                     </v-list-item>
                 </v-list>
-                <!-- <v-btn v-if="publications.length > 3" @click="$router.push('/publications')">View More</v-btn> -->
             </v-row>
 
             <v-row v-if="patents.length > 0">
