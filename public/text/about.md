@@ -1,3 +1,3 @@
 ### Hi, welcome to my website!
 
-My name is Kaiwen Li (李恺文). I am currently a research assistant and recently obtained my master’s degree in Human-Computer Interaction (HCI) from Xi’an Jiaotong-Liverpool University in 2023. My passion lies in exploring new interaction methods and creating cutting-edge solutions in VR to push the boundaries of HCI. My work has been presented at prominent conferences such as CHI and ChinaVis.
+My name is Kaiwen Li (李恺文). I am currently a research assistant and recently obtained my master’s degree in Human-Computer Interaction (HCI) from Xi’an Jiaotong-Liverpool University in 2023. My passion lies in exploring new interaction methods and creating cutting-edge solutions in VR to push the boundaries of HCI. 
