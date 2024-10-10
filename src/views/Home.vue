@@ -238,6 +238,23 @@
                 <!-- <v-btn v-if="publications.length > 3" @click="$router.push('/publications')">View More</v-btn> -->
             </v-row>
 
+            <v-row v-if="awards.length > 0">
+                <h1>AWARDS</h1>
+            </v-row>
+
+            <v-row v-if="awards.length > 0">
+                <v-list>
+                    <v-list-item v-for="(award, index) in awards" :key="index">
+                        <v-list-item-content>
+                            <v-list-item-title>[{{ award.position }}] {{ award.award }}, {{ award.time }}</v-list-item-title>
+                            <v-list-item-subtitle>{{ award.name }}</v-list-item-subtitle>
+                            <!-- <v-list-item-subtitle v-if="publication.doi">DOI: {{ publication.doi }}</v-list-item-subtitle> -->
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list>
+                <!-- <v-btn v-if="publications.length > 3" @click="$router.push('/publications')">View More</v-btn> -->
+            </v-row>
+
         </v-container>
 
     </v-container>
@@ -255,6 +272,7 @@ export default {
             publications: [],
             projects: [],
             patents: [],
+            awards: [],
 
             about: ""
         }
@@ -350,6 +368,13 @@ export default {
             this.patents = await response.json();
         } catch (error) {
             console.error('Error fetching patents data:', error);
+        }
+        
+        try {
+            const response = await fetch('/awards.json');
+            this.awards = await response.json();
+        } catch (error) {
+            console.error('Error fetching awards data:', error);
         }
 
         if (this.profile && this.profile.about) {

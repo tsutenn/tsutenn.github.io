@@ -1,7 +1,7 @@
 {
     "name": "Kaiwen Li",
     "avatar": "/images/avatar.jpg",
-    "position": "Research Assitant",
+    "position": "Research Assistant",
     "organization": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
     "email": [
         "citun.li23@gmail.com",
@@ -24,7 +24,7 @@
     "about": "/text/about.md",
     "education": [
         {
-            "degree": "MSc Human-Computer Interaction",
+            "degree": "MSc in Human-Computer Interaction",
             "university": "Xi'an Jiaotong-Liverpool University",
             "start_date": "2022-09-01",
             "end_date": "2024-04-01"
@@ -39,7 +39,7 @@
     "employment": [
         {
             "company": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
-            "position": "Research Assitant",
+            "position": "Research Assistant",
             "start_date": "2021-06-01",
             "end_date": ""
         },
@@ -58,7 +58,7 @@
         {
             "name": "N1L00196 Virtual Reality Design",
             "department": "Zhejiang Wanli University",
-            "position": "Teaching Assitant",
+            "position": "Teaching Assistant",
             "start_date": "2024-09-01",
             "end_date": ""
         },
@@ -66,7 +66,7 @@
         {
             "name": "INT406 Data Mining and Machine Learning",
             "department": "Xi'an Jiaotong-Liverpool University",
-            "position": "Teaching Assitant",
+            "position": "Teaching Assistant",
             "start_date": "2024-03-01",
             "end_date": "2024-06-01"
         }
