@@ -38,6 +38,12 @@
     ],
     "employment": [
         {
+            "company": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
+            "position": "Research Assitant",
+            "start_date": "2021-06-01",
+            "end_date": ""
+        },
+        {
             "company": "China Communications Services Corp. Ltd.",
             "position": "Front-End Engineer (Internship)",
             "start_date": "2024-06-11",
@@ -49,14 +55,6 @@
         }
     ],
     "academic": [
-        {
-            "name": "Visual Analytics and Collaborative Technologies Research Lab",
-            "department": "Xi'an Jiaotong-Liverpool University",
-            "position": "Research Assitant",
-            "start_date": "2021-06-01",
-            "end_date": ""
-        },
-
         {
             "name": "N1L00196 Virtual Reality Design",
             "department": "Zhejiang Wanli University",

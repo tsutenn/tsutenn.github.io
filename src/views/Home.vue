@@ -1,5 +1,5 @@
 <template>
-    <v-container style="max-width: 1280px; min-width: 600px;">
+    <v-container style="max-width: 1280px; min-width: 640px;">
         <!-- 基础信息卡片 -->
         <v-card class="mb-4" outlined style="padding: 8px; background-color: #5c6bc0; color: white;">
 
@@ -27,7 +27,7 @@
 
         <!-- <v-spacer style="height: 12px;"></v-spacer> -->
 
-        <v-container>
+        <v-container fluid ma-0 pa-0 fill-height>
             <v-row>
                 <h1>ABOUT ME</h1>
             </v-row>
@@ -78,7 +78,7 @@
                             <v-list-item v-for="(item, index) in academic" :key="index">
                                 <v-list-item-content>
                                     <v-list-item-title>{{ item.position }}</v-list-item-title>
-                                    <v-list-item-subtitle>{{ item.name }} - {{ item.department }}</v-list-item-subtitle>
+                                    <v-list-item-subtitle>{{ item.name }}, {{ item.department }}</v-list-item-subtitle>
                                     <v-list-item-subtitle>{{ formattedDate(item.start_date) }} - {{
                                         formattedDate(item.end_date) }}</v-list-item-subtitle>
                                 </v-list-item-content>
@@ -132,10 +132,10 @@
             </v-row>
 
             <v-row>
-                <v-container class="pa-4 text-center">
+                <v-container class=" text-center" fluid ma-0 pa-0 fill-height>
                     <v-row align="center" class="fill-height" justify="center">
                         <template v-for="(item, i) in projects" :key="i">
-                            <v-col cols="12" md="6">
+                            <v-col cols="12" md="4">
                                 <v-hover v-slot="{ isHovering, props }">
                                     <v-card :class="{ 'on-hover': isHovering }" :elevation="isHovering ? 12 : 2"
                                         v-bind="props">
@@ -217,6 +217,27 @@
                 <!-- <v-btn v-if="publications.length > 3" @click="$router.push('/publications')">View More</v-btn> -->
             </v-row>
 
+            <v-row v-if="patents.length > 0">
+                <h1>PATENTS</h1>
+            </v-row>
+
+            <v-row v-if="patents.length > 0">
+                <v-list>
+                    <v-list-item v-for="(patent, index) in patents" :key="index">
+                        <v-list-item-content>
+                            <v-list-item-title>[{{ patent.type }}] {{ patent.title }}</v-list-item-title>
+                            <v-list-item-subtitle
+                                v-html="formatAuthors(patent.authors, patent.your_position)"></v-list-item-subtitle>
+                            <v-list-item-subtitle>{{ patent.year }}. Application NO.: {{ patent.application_no ? patent.application_no : "NaN" }},
+                                Issus NO.: {{ patent.issue_no ? patent.issue_no : "NaN" }}.
+                                {{ patent.remark ? "(" + patent.remark + ")" : "" }}</v-list-item-subtitle>
+                            <!-- <v-list-item-subtitle v-if="publication.doi">DOI: {{ publication.doi }}</v-list-item-subtitle> -->
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list>
+                <!-- <v-btn v-if="publications.length > 3" @click="$router.push('/publications')">View More</v-btn> -->
+            </v-row>
+
         </v-container>
 
     </v-container>
@@ -233,6 +254,7 @@ export default {
             profile: undefined,
             publications: [],
             projects: [],
+            patents: [],
 
             about: ""
         }
@@ -321,6 +343,13 @@ export default {
             this.publications = await response.json();
         } catch (error) {
             console.error('Error fetching publications data:', error);
+        }
+
+        try {
+            const response = await fetch('/patents.json');
+            this.patents = await response.json();
+        } catch (error) {
+            console.error('Error fetching patents data:', error);
         }
 
         if (this.profile && this.profile.about) {
