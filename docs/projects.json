@@ -9,7 +9,7 @@
         "link": [
             {
                 "name": "Demo",
-                "icon": "mdi-youtube-play",
+                "icon": "mdi:mdi-youtube-play",
                 "url": "https://youtu.be/Nbw-v7b_7pY"
             }
         ]
