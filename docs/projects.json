@@ -1,5 +1,20 @@
 [
     {
+        "title": "LivehouseVR",
+        "subtitle": "A VRChat World for DJ Performance and Musical Experience",
+        "description": "A livehouse performance supported by a physical DJ controller that enables simultaneous control of both Rekordbox and virtual DJ setup in VRChat by sending MIDI data, it also provides a rich array of facilities and functionalities.",
+        "images": [
+            "/images/livehousevr.png"
+        ],
+        "link": [
+            {
+                "name": "Demo",
+                "icon": "mdi:mdi-web",
+                "url": "https://youtu.be/Nbw-v7b_7pY"
+            },
+        ]
+    },
+    {
         "title": "MapCraft",
         "subtitle": "Geographic Information Graphics Web Editor for Visual Analysis",
         "description": "A web application provides customized geo-info-graphics generation on different source data, encoding method, projections and map representations.",
@@ -30,7 +45,7 @@
             {
                 "name": "Github",
                 "icon": "mdi:mdi-github",
-                "url": "https://github.com/MapCraftForGeo-InfoGraphics/geo-infographics"
+                "url": "https://github.com/tsutenn/fmp"
             }
         ]
     },
