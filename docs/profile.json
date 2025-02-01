@@ -1,8 +1,8 @@
 {
     "name": "Kaiwen Li",
-    "avatar": "/images/avatar.jpg",
+    "avatar": "/images/avatar2.jpg",
     "position": "Research Assistant",
-    "organization": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
+    "organization": "NingboTech University",
     "email": [
         "citun.li23@gmail.com",
         "kaiwen.li18@alumni.xjtlu.edu.cn"
@@ -38,9 +38,9 @@
     ],
     "employment": [
         {
-            "company": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
+            "company": "NingboTech University",
             "position": "Research Assistant",
-            "start_date": "2021-06-01",
+            "start_date": "2024-11-01",
             "end_date": ""
         },
         {
@@ -52,6 +52,12 @@
                 "Developed and maintained web applications using Vue.js",
                 "Collaborated with cross-functional teams to deliver projects on time"
             ]
+        },
+        {
+            "company": "Visual Analytics and Collaborative Technologies Research Lab, XJTLU",
+            "position": "Research Assistant",
+            "start_date": "2021-06-01",
+            "end_date": "2024-03-31"
         }
     ],
     "academic": [
